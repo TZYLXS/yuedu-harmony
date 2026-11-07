@@ -1,0 +1,5 @@
+# 1. 混淆规则：类名、方法名保留供 ArkUI 运行时反射调用
+-keep-global-name
+-keep-property-name
+-keep-file-name
+-dontobfuscate-global-attribute

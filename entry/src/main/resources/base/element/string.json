@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "阅读 HarmonyOS 客户端：接入 FnReader 的手机 API、Legado 书源桥与 WebDAV"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "阅读"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "阅读"
+    }
+  ]
+}

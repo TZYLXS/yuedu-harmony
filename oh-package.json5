@@ -1,0 +1,13 @@
+{
+  "modelVersion": "5.0.0",
+  "name": "yuedu-harmony",
+  "version": "1.0.0",
+  "description": "阅读（yuedu）HarmonyOS 客户端：接入 FnReader / 飞牛阅读服务的手机 API、Legado 书源桥与 WebDAV",
+  "main": "",
+  "author": "TZYLXS",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hypium": "1.0.19"
+  }
+}

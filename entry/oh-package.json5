@@ -1,0 +1,9 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "阅读 HarmonyOS 客户端入口模块",
+  "main": "",
+  "author": "TZYLXS",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}
