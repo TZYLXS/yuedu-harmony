@@ -1,5 +1,24 @@
 # 更新日志
 
+## v1.0.1 — 2026-11-08
+
+用 DevEco Studio 26.0.0（HarmonyOS SDK API 26）实机编译通过后的修复版。
+
+### 修复
+
+- `pages/Reader.ets`：`TextAlign.Justify` 改为 `TextAlign.JUSTIFY`。原写法在 ArkTS 严格类型检查下报 `10505001 Property 'Justify' does not exist on type 'typeof TextAlign'`，导致 `assembleHap` 直接失败
+
+### 构建
+
+- 命令行构建已验证通过：`hvigorw --mode module -p product=default assembleHap --no-daemon` → `BUILD SUCCESSFUL`，33 tasks
+- 产物 `entry-default-unsigned.hap`（约 196 KB），`ets/modules.abc` 已打入，`PackingCheck` 通过
+- 剩余告警均为 deprecated API（`showToast` / `getContext` / `pushUrl` / `getParams` / `back`），不影响安装运行
+
+### 说明
+
+- 本版 Release 附 **未签名 HAP**，用于验证编译产物；装真机前需自行签名
+- 版本号 `versionName 1.0.1`、`versionCode 1000001`
+
 ## v1.0.0 — 2026-11-08
 
 首个版本：把 FnReader（飞牛 fnOS「阅读」）的三种接入方式合并进 HarmonyOS 客户端。

@@ -60,15 +60,17 @@ yuedu-harmony/
 ```bash
 hvigorw clean --no-daemon
 hvigorw assembleHap --mode module -p product=default --no-daemon
-# 产物：entry/build/default/outputs/default/entry-default-signed.hap
+# 产物：entry/build/default/outputs/default/entry-default-unsigned.hap（未签名）
+# 在 DevEco Studio 里登录华为账号并配置自动签名后，产物为 entry-default-signed.hap
 ```
 
 更多细节见 [docs/构建与发版.md](docs/构建与发版.md)。
 
 ## 版本
 
-- 当前：`1.0.0`（见 [CHANGELOG.md](CHANGELOG.md)）
-- Release 里挂源码包（`yuedu-harmony-<version>-source.zip`）；HAP 需本机 DevEco Studio 编译后另行上传，仓库不提交构建产物
+- 当前：`1.0.1`（见 [CHANGELOG.md](CHANGELOG.md)）
+- Release 挂两类产物：源码包 `yuedu-harmony-<version>-source.zip`，以及命令行编译出的未签名 HAP `yuedu-harmony-<version>-unsigned.hap`
+- 未签名 HAP 不能直接装进手机：需在 DevEco Studio 里登录华为账号做自动签名（或自备 `.p12/.cer/.p7b`），签名后再 `hdc install`
 
 ## 免责声明
 

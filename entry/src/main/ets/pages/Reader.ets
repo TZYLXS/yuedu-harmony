@@ -249,7 +249,7 @@ struct Reader {
                 .fontSize(this.fontSize)
                 .lineHeight(this.fontSize * 1.8)
                 .fontColor('#333333')
-                .textAlign(TextAlign.Justify)
+                .textAlign(TextAlign.JUSTIFY)
                 .width('100%')
                 .margin({ bottom: 10 })
             }, (paragraph: string, idx: number) => idx + '-' + paragraph.length)
